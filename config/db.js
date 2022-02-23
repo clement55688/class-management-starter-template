@@ -7,7 +7,7 @@ connectDatabase = () => {
       host: process.env.DBHOST,
       database: process.env.DBNAME,
       user: process.env.DBUSER,
-      password: "",
+      password: process.env.DBPASSWORD,
     });
     db.connect(function (err) {
       if (!err) {
